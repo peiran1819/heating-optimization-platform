@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: heating-optimization-platform
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npx tsx server.ts
+    plan: free
